@@ -1,8 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:wght@100..900&display=swap');
+*{
+  padding: 0;
+  box-sizing: border-box;
+};
 
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+}
  .inter-font{
     font-family: "Inter", sans-serif;
   }
  .raleway-font{
     font-family: "Raleway", sans-serif;
   }
+  .banner_bg{
+    background-image: url(/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+body{
+    font-family: "Raleway", sans-serif;
+    
+}
