@@ -19,7 +19,7 @@
     <!-- google font  -->
   </head>
   <body>
-    <header class="container mb-44">
+    <header class="container mb-44 m-auto">
       <!-- nav section -->
       <div class="flex justify-between mt-12 mb-7 items-center">
         <nav><h2 class="text-4xl font-bold">B-Ticket</h2></nav>
@@ -56,9 +56,7 @@
                 the app. The integrated testing features allow for a streamlined
                 .
               </p>
-              <button
-                class="bg-green-500 text-black text-xl py-5 px-8 rounded-xl"
-              >
+              <button class="bg-green-500 text-black text-xl py-5 px-8 rounded-xl">
                 Buy Tickets
               </button>
             </div>
@@ -95,11 +93,101 @@
     </header>
     <main>
       <!-- best offer section -->
-       <section class="container">
+       <section class="container m-auto mb-16 lg:mb-44">
         <div class="mb-12 text-center"><h2 class="text-5xl font-bold text-black">best offers for you</h2></div>
-        <div></div>
-        <div></div>
+        <div class="flex gap-6 mb-16">
+          <!-- 25% off  -->
+          <div class="flex-1 relative flex-col lg:flex-row items-center flex justify-between bg-yellow-500 rounded-3xl p-12">
+            <img class="absolute left-[50%] scale-[1.1] top-1" src="images/cupon-devider.png" alt="coupon code picture">
+            <div class="space-y-4 ">
+              <h2 class="text-black font-black inter-font text-4xl">25% off</h2>
+              <p class="text-2xl font-semibold text-[#030712b6]">on your next purchase</p>
+              <p class="text-xl font-medium text-[#0307127b]">use by January 2024</p>
+            </div>
+            <div class="space-y-4">
+              <h2 class="text-black font-black inter-font text-4xl">new<sub>15</sub></h2>
+              <p class="text-xl font-medium text-[#0307127b]" >coupon code</p>
+            </div>
+          </div>
+          <!-- 15% off -->
+           <div class="flex-1 relative flex-col lg:flex-row items-center flex justify-between bg-[#F78C9C] rounded-3xl p-12">
+            <img class="absolute left-[50%] scale-[1.1] top-1" src="images/cupon-devider.png" alt="coupon code picture">
+            <div class="space-y-4 ">
+              <h2 class="text-black font-black inter-font text-4xl">20% off</h2>
+              <p class="text-2xl font-semibold text-[#030712b6]">on your next purchase</p>
+              <p class="text-xl font-medium text-[#0307127b]">use by January 2024</p>
+            </div>
+            <div class="space-y-4">
+              <h2 class="text-black font-black inter-font text-4xl">couple<sub>20</sub></h2>
+              <p class="text-xl font-medium text-[#0307127b]" >coupon code</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button class="text-green-500 border-2 border-green-500 text-xl capitalize font-bold py-5 px-8 rounded-xl">
+                see all offer
+              </button>
+        </div>
        </section>
+
+       <!-- B tick main section -->
+        <section class="rounded-t-[80px] bg-[#F7F8F8] py-40 border-t-2 border-t-green-500">
+          <div class="container m-auto">
+                             <!-- b paribahan title -->
+                 <div class="text-center mb-6 lg:mb-10">
+                  <h2 class="text-4xl font-bold mb-2 "> B Paribahan</h2>
+                    <p class=" w-9/12 m-auto text-xl inter-font text-[#00000066]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                 </div>
+               <section class="bg-white rounded-2xl">
+                 <!-- routing section -->
+                  <div class="rounded-3xl relative p-8 items-center grid grid-cols-4">
+                    <img class="absolute scale-[1.2] right-[19%] top-5" src="images/info-devider.png" alt="info">
+                    <div class="  col-span-3">
+                     <div class="flex justify-between items-center">
+                       <div class="flex items-center gap-2">
+                        <img src="images/bus-logo.png" alt="bus logo">
+                        <div>
+                          <h3 class="font-bold text-3xl text-[#030712]">Greenline Paribahan</h3>
+                          <p class="text-xl inter-font text-[#00000066] ">Coach-009-WEB ! AC_Business</p>
+                        </div>
+
+                      </div>
+                      <!-- seat -->
+                       <div class="bg-[#1cd1003e] rounded-2xl text-green-500 px-4 gap-1 flex items-center py-3">
+                          <img src="images/seat-green-filled.png"  alt="seat">
+                          <h4 class="text-xl font-medium "> <span id="seat_left" class="">40</span> seats left</h4>
+                       </div>
+                     </div>
+                       <!-- routing input field -->
+                           <div class="rounded-2xl p-8 mt-6 bg-[#F7F8F8]"> 
+                              <div class="flex  py-6 justify-between items-center border-b border-dashed border-b-gray-400">
+                                <h2 class="text-xl font-semibold text-[#00000066]">Route</h2>
+                                <h2 class="text-xl font-semibold text-[#030712]">Dhaka - Sylhet</h2>
+                              </div>
+                              <div class="flex  py-6 justify-between items-center border-b border-dashed border-b-gray-400">
+                                <h2 class="text-xl font-semibold text-[#00000066]">Departure time</h2>
+                                <h2 class="text-xl font-semibold text-[#030712]">8:oo PM</h2>
+                              </div>
+                              <div class="flex  py-6 justify-between items-center">
+                                <h4 class="text-xl font-medium py-3 px-4 rounded-2xl bg-[#0000001b] text-[#0000008a] "> Boarding Point - Laxmipur</h4>
+                                <h4 class="text-xl font-medium  py-3 px-4 rounded-2xl bg-[#0000001b] text-[#0000008a]"> Dropping Point - Bogura</h4>
+                                <h4 class="text-xl font-medium  py-3 px-4 rounded-2xl bg-[#0000001b] text-[#0000008a]"> Est. Time - 11 Hour</h4>
+                              </div>
+                           </div>
+                    </div>
+                    
+
+                    <div class="flex-auto text-center col-span-1">
+                      <div class="flex justify-center">
+                        <img src="images/fare.png" alt="fare">
+                      </div>
+                      <h2 class="font-bold text-3xl text-[#030712]"><span id="ticket_money">500</span> taka</h2>
+                      <h5 class="text-2xl font-semibold text-[#00000066] ">Pear seat</h5>
+                    </div>
+                  </div>
+               </section>
+          </div>
+        </section>
     </main>
     <footer></footer>
   </body>
