@@ -96,29 +96,29 @@
        <section class="container m-auto mb-16 lg:mb-44">
         <div class="mb-12 text-center"><h2 class="text-5xl font-bold text-black">best offers for you</h2></div>
         <div class="flex gap-6 mb-16">
-          <!-- 25% off  -->
+          <!-- 15% off  -->
           <div class="flex-1 relative flex-col lg:flex-row items-center flex justify-between bg-yellow-500 rounded-3xl p-12">
             <img class="absolute left-[50%] scale-[1.1] top-1" src="images/cupon-devider.png" alt="coupon code picture">
             <div class="space-y-4 ">
-              <h2 class="text-black font-black inter-font text-4xl">25% off</h2>
+              <h2 id="25-off" class="text-black font-black inter-font text-4xl">15% off</h2>
               <p class="text-2xl font-semibold text-[#030712b6]">on your next purchase</p>
               <p class="text-xl font-medium text-[#0307127b]">use by January 2024</p>
             </div>
             <div class="space-y-4">
-              <h2 class="text-black font-black inter-font text-4xl">new<sub>15</sub></h2>
+              <h2 class="text-black font-black inter-font text-4xl">new15</h2>
               <p class="text-xl font-medium text-[#0307127b]" >coupon code</p>
             </div>
           </div>
-          <!-- 15% off -->
+          <!-- 20% off -->
            <div class="flex-1 relative flex-col lg:flex-row items-center flex justify-between bg-[#F78C9C] rounded-3xl p-12">
             <img class="absolute left-[50%] scale-[1.1] top-1" src="images/cupon-devider.png" alt="coupon code picture">
             <div class="space-y-4 ">
-              <h2 class="text-black font-black inter-font text-4xl">20% off</h2>
+              <h2 id="20-off" class="text-black font-black inter-font text-4xl">20% off</h2>
               <p class="text-2xl font-semibold text-[#030712b6]">on your next purchase</p>
               <p class="text-xl font-medium text-[#0307127b]">use by January 2024</p>
             </div>
             <div class="space-y-4">
-              <h2 class="text-black font-black inter-font text-4xl">couple<sub>20</sub></h2>
+              <h2 class="text-black font-black inter-font text-4xl">couple20</h2>
               <p class="text-xl font-medium text-[#0307127b]" >coupon code</p>
             </div>
           </div>
@@ -377,36 +377,42 @@
               </div>
               <div class="border-r-2 mx-5 border-r-text-[#0000007a] border-dashed"></div>
               <!-- money section -->
-              <div class="pr-5">
+              <div class="pr-5 flex-1">
                  <h2 class="text-2xl font-semibold mb-4 pb-3 border-b-2 border-b-text-[#0000007a] border-dashed ">Select your seat</h2>
 
                  <!-- seat price and name -->
-                 <div>
+                 <div class="w-full">
                   <div class=" my-6 p-8 rounded-xl inter-font flex bg-[#F7F8F8]">
-                    <div class="">
+                    <div class="w-full">
                         <div class="flex w-full pb-4 justify-between border-b-2 border-b-text-[#0000007a] border-dashed">
                           <h3 class="text-xl">Seat <span id="increase-seat" class="p-1 rounded-md bg-green-500 text-white">0</span></h3>
                           <h3 class="text-xl">Class</h3>
                           <h3 class="text-xl">Price</h3>
                         </div>
 
+                        <!-- append ticket details -->
                         <div id="selectSeatContainer" class="text-xl text-[#00000066] w-full my-3 justify-between">
                           
                         </div>
 
-                        <div class="flex justify-between items-center space-y-4 inter-font border-t-2 border-t-text-[#0000007a] font-semibold py-4">
+                        <div class="flex justify-between w-full items-center py-4 inter-font border-t-2 border-t-text-[#0000007a] font-semibold ">
                           <h1 class="">Total Price</h1>
-                          <h3 class="">BDT <span id="total_price" class=" ml-3">0</span></h3>
+                          <h3 class="">BDT<span id="total_price" class=" ml-3">0</span></h3>
+                        </div>
+                        <!-- show discount Price  -->
+                        <div class="flex  justify-between items-center py-4 mb-4 inter-font border-b-2 border-b-text-[#0000007a]  border-t-2  border-t-text-[#0000007a] font-semibold">
+                          <h1 class="">Discount Price</h1>
+                          <h3 class="">BDT<span id="discount_price" class=" ml-3">0</span></h3>
                         </div>
 
-                        <div class="text-xl py-2 pl-5 pr-2 bg-white rounded-xl flex justify-between">
-                          <input class="focus:outline-none" type="text" placeholder="Have a Any Coupon?">
-                          <button disabled id="apply_button"  class="py-3  px-5 rounded-xl bg-green-500 font-semibold text-white">Apply</button>
+                        <div id="discount-container" class="text-xl py-2 pl-5 pr-2 bg-white rounded-xl flex justify-between">
+                          <input id="coupon-input" class="focus:outline-none" type="text" placeholder="Have a Any Coupon?">
+                          <button onclick="applyButtonHandle()" disabled id="apply_button"  class="py-3  px-5 rounded-xl bg-green-500 font-semibold text-white">Apply</button>
                         </div>
 
-                        <div class="flex justify-between inter-font font-medium items-center space-y-4">
+                        <div class="flex justify-between inter-font font-medium items-center py-4">
                           <h1 class="">Grand Total</h1>
-                          <h3 class="">BDT <span id="grand_price" class=" ml-3">0</span></h3>
+                          <h3 class="">BDT<span id="grand_price" class=" ml-3">0</span></h3>
                         </div>
                     </div>
                     
@@ -426,7 +432,7 @@
                   </div>
 
                   <div class="w-full"> 
-                    <button class="py-3 px-5 w-full rounded-xl bg-green-500 font-semibold text-white">Next</button>
+                    <button onclick="submitButtonHandle()" class="py-3 px-5 w-full rounded-xl bg-green-500 font-semibold text-white">Next</button>
                   </div>
 
                   <!-- trams and condition -->
@@ -448,6 +454,16 @@
            
         </section>
 
+        <!-- modal section -->
+         <div id="modal-section" class="absolute hidden  z-50 bg-white text-center backdrop-blur-sm space-y-5 py-12 px-20 rounded-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+            <img class="m-auto" src="images/success.png" alt="success ">
+            <h3 class="text-2xl font-bold text-green-500 inter-font">Success</h3>
+            <p class="text-xl text-[#4A4A4A] font-medium">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.</p>
+            <p class="text-xl text-[#4A4A4A] font-light">Shortly you will find a confirmation in your email.</p>
+            <div class=""> 
+                    <button id="#home" onclick="continueButtonHandle()" class="py-3 px-32 rounded-xl bg-green-500 font-semibold text-white">continue</button>
+                  </div>
+         </div>
     </main>
     <footer></footer>
     <script src="screpts/app.js"></script>
