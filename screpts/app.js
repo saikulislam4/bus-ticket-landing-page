@@ -1,15 +1,23 @@
 // selected all class
+let collectedClicked = [];
     const allSeat = document.querySelectorAll(".seat2");
-    
     
     for (const seats of allSeat) {
       seats.addEventListener("click", function (e) {
+        // check if seat limit is reached before adding another seat
+        if (collectedClicked.length === 4) {
+          alert("limit over!!! you can selects only 4");
+          e.stopPropagation();
+          return;
+        }
         // set seat increase and decrease
         leftSeat("seat_left");
-        // select seat name
-        const selectedSeat = e.target.innerText;
 
-        // selected button change color and disabled button
+        // add selected seat in array
+        const selectedSeat = e.target.innerText;
+        collectedClicked.push(selectedSeat);
+
+        // update button style and disable
         const select = e.target;
         select.style.background = "rgb(34 197 94)";
         select.style.color = "white";
@@ -17,7 +25,7 @@
 
         // total price
         const ticketPrice = 500;
-
+        
         // increase seat number
         const seatIncrease = document.getElementById("increase-seat");
         const seatIncreaseValue = seatIncrease.innerText;
@@ -116,12 +124,10 @@
       const bodyBlur = document.getElementById("body-blur");
       function submitButtonHandle(){
         modalSection.classList.remove('hidden');
-        bodyBlur.classList.add("-z-10");
       }
       // modal button handle function
       function continueButtonHandle() {
         modalSection.classList.add("hidden");
-        bodyBlur.classList.remove("-z-10");
       }
 
     // get inner Html

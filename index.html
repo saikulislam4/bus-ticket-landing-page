@@ -16,12 +16,11 @@
     <!-- style css -->
     <link rel="stylesheet" href="style/style.css" />
 
-    <!-- google font  -->
   </head>
   <body>
     <header class="container mb-44 m-auto">
       <!-- nav section -->
-      <div class="flex justify-between mt-12 mb-7 items-center">
+      <div class="flex hidden justify-between mt-12 mb-7 items-center">
         <nav><h2 class="text-4xl font-bold">B-Ticket</h2></nav>
         <nav class="flex capitalize">
           <a href="#"></a>
@@ -42,29 +41,29 @@
 
       <!-- banner section -->
       <section class="container">
-        <div class="relative rounded-3xl text-white banner_bg h-[560px]" >
+        <div class="relative px-2 xl:px-0 rounded-3xl text-white banner_bg h-[360px] lg:h-[560px]" >
           <div class="grid h-full justify-center items-center text-center">
-            <div class="space-y-6">
-              <h1 class="font-extrabold text-6xl">
+            <div class="space-y-3 lg:space-y-6">
+              <h1 class="font-extrabold text-3xl lg:text-6xl">
                 End-to-End Travel with P Paribahan
               </h1>
-              <h3 class="text-green-500 text-6xl font-extrabold">
+              <h3 class="text-green-500 text-3xl  lg:text-6xl font-extrabold">
                 P Paribahan
               </h3>
-              <p class="w-3/4 text-xl inter-font m-auto">
+              <p class="lg:w-3/4 text-sm lg:text-xl inter-font m-auto">
                 Yes, you can run unit tests and view the results directly within
                 the app. The integrated testing features allow for a streamlined
                 .
               </p>
-              <button class="bg-green-500 text-black text-xl py-5 px-8 rounded-xl">
+              <button class="bg-green-500 text-black text-sm lg:text-xl py-5 px-8 rounded-xl">
                 Buy Tickets
               </button>
             </div>
           </div>
           <!-- information for user, rental and ticket -->
-          <div class="absolute bottom-[-11%] left-[50%] translate-x-[-50%] grid grid-cols-3 w-3/4 gap-x-6">
+          <div class="xl:absolute space-y-2 mt-4 xl:mt-0 xl:bottom-[-11%] xl:left-[50%] xl:translate-x-[-50%] grid xl:grid-cols-3 xl:w-3/4 gap-x-6">
             
-             <div class="flex p-8 rounded-3xl border-b-2 border-green-500 bg-white">
+             <div class="flex p-8 rounded-3xl justify-center border-b-2 border-green-500 bg-white">
                 <img src="images/people.png" alt="user">
                 <div class="ml-4">
                   <h2 class="text-3xl font-bold inter-font text-black">500K+</h2>
@@ -72,7 +71,7 @@
                 </div>
              </div>
 
-             <div class="flex p-8 rounded-3xl border-b-2 border-green-500 bg-white">
+             <div class="flex p-8 rounded-3xl border-b-2 justify-center border-green-500 bg-white">
                 <img src="images/ticket-cupon.png" alt="user">
                 <div class="ml-4">
                   <h2 class="text-3xl font-bold inter-font text-black">1.7 lacks</h2>
@@ -80,7 +79,7 @@
                 </div>
              </div>
 
-             <div class="flex p-8 rounded-3xl border-b-2 border-green-500 bg-white">
+             <div class="flex p-8 rounded-3xl border-b-2 justify-center border-green-500 bg-white">
                 <img src="images/stoppage.png" alt="user">
                 <div class="ml-4">
                   <h2 class="text-3xl font-bold inter-font text-black">80K+</h2>
@@ -91,14 +90,15 @@
         </div>
       </section>
     </header>
-    <main>
+    <main class="">
       <!-- best offer section -->
-       <section class="container m-auto mb-16 lg:mb-44">
+       <section class="container px-2 xl:px-0 m-auto mb-16 lg:mb-32">
         <div class="mb-12 text-center"><h2 class="text-5xl font-bold text-black">best offers for you</h2></div>
-        <div class="flex gap-6 mb-16">
+
+        <div class="flex flex-col lg:flex-row gap-6 mb-16">
           <!-- 15% off  -->
-          <div class="flex-1 relative flex-col lg:flex-row items-center flex justify-between bg-yellow-500 rounded-3xl p-12">
-            <img class="absolute left-[50%] scale-[1.1] top-1" src="images/cupon-devider.png" alt="coupon code picture">
+          <div class="flex-1 relative flex-col lg:flex-row items-center text-center flex justify-center lg:justify-between bg-yellow-500 rounded-3xl p-12">
+            <img class="absolute hidden lg:block left-[50%] lg:scale-[1.2] xl:scale-[1.1] lg:top-5 xl:top-1" src="images/cupon-devider.png" alt="coupon code picture">
             <div class="space-y-4 ">
               <h2 id="25-off" class="text-black font-black inter-font text-4xl">15% off</h2>
               <p class="text-2xl font-semibold text-[#030712b6]">on your next purchase</p>
@@ -110,8 +110,8 @@
             </div>
           </div>
           <!-- 20% off -->
-           <div class="flex-1 relative flex-col lg:flex-row items-center flex justify-between bg-[#F78C9C] rounded-3xl p-12">
-            <img class="absolute left-[50%] scale-[1.1] top-1" src="images/cupon-devider.png" alt="coupon code picture">
+           <div class="flex-1 relative flex-col lg:flex-row items-center flex text-center justify-center lg:justify-between bg-[#F78C9C] rounded-3xl p-12">
+            <img class="absolute hidden lg:block left-[50%] lg:scale-[1.2] xl:scale-[1.1] lg:top-5 xl:top-1" src="images/cupon-devider.png" alt="coupon code picture">
             <div class="space-y-4 ">
               <h2 id="20-off" class="text-black font-black inter-font text-4xl">20% off</h2>
               <p class="text-2xl font-semibold text-[#030712b6]">on your next purchase</p>
@@ -123,7 +123,8 @@
             </div>
           </div>
         </div>
-        <div class="flex justify-center">
+
+        <div class="flex flex-col lg:flex-row justify-center">
           <button class="text-green-500 border-2 border-green-500 text-xl capitalize font-bold py-5 px-8 rounded-xl">
                 see all offer
               </button>
@@ -131,15 +132,15 @@
        </section>
 
        <!-- B tick main section -->
-        <section class="rounded-t-[80px] bg-[#F7F8F8] py-40 border-t-2 border-t-green-500">
+        <section class="rounded-t-[80px] px-2 lg:px-0 bg-[#F7F8F8] pt-20 lg:py-40 border-t-2 border-t-green-500">
           <!-- b paribahan title -->
           <div class="container m-auto">
                  <div class="text-center mb-6 lg:mb-10">
                   <h2 class="text-4xl font-bold mb-2 "> B Paribahan</h2>
-                    <p class=" w-9/12 m-auto text-xl inter-font text-[#00000066]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                    <p class=" lg:w-9/12 m-auto text-xl inter-font text-[#00000066]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                  </div>
 
-               <section class="bg-white rounded-2xl">
+               <section class="bg-white hidden rounded-2xl">
                  <!-- routing section -->
                   <div class="rounded-3xl relative p-8 items-center grid grid-cols-4">
                     <img class="absolute scale-[1.2] right-[19%] top-5" src="images/info-devider.png" alt="info">
@@ -190,10 +191,10 @@
           </div>
 
           <!-- seat selection section -->
-           <section class="flex  my-16">
-            <div class=" container m-auto p-8  bg-white rounded-2xl">
+           <section class="flex mt-16">
+            <div class=" container m-auto lg:p-8  bg-white rounded-2xl">
             <!-- select your seat -->
-             <div class="flex">
+             <div class="flex flex-col mt-10 lg:mt-0 lg:flex-row">
               <div class="flex-1 ">
                 <h2 class="text-2xl font-semibold mb-4 border-b-2 border-b-text-[#0000007a] border-dashed pb-3  ">Select your seat</h2>
                   <div class="flex border-b-2 border-b-text-[#0000007a] border-dashed justify-between items-center pb-3 ">
@@ -207,184 +208,184 @@
                         </div>
                   </div>
                 <!-- seat section -->
-                <section class="grid space-y-6">
+                <section class="grid space-y-4 lg:space-y-6">
                   <!-- staring -->
-                <div class="flex justify-end my-6"> 
+                <div class="flex justify-end mt-4 lg:mt-6"> 
                   <img class="py-3 px-10 rounded-xl bg-[#F7F8F8]" src="images/steering.png" alt="steering">
                 </div>
                   <!-- A -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">A</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">A</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14   " >A1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 " >A1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">A2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">A2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">A3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">A3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">A4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">A4</button>
                         </div>
                     </div>
                   <!-- B -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">B</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">B</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">B1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">B1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">B2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">B2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">B3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">B3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">B4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">B4</button>
                         </div>
                     </div>
                   <!-- C -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">C</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">C</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">C1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">C1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">C2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">C2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">C3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">C3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">C4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">C4</button>
                         </div>
                     </div>
                   <!-- D -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">D</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">D</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">D1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">D1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">D2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">D2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">D3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">D3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">D4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">D4</button>
                         </div>
                     </div>
                   <!-- E -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">E</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">E</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">E1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">E1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">E2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">E2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">E3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">E3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">E4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">E4</button>
                         </div>
                     </div>
                   <!-- F -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">F</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">F</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">F1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">F1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">F2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">F2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">F3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">F3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">F4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">F4</button>
                         </div>
                     </div>
                   <!-- G -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">G</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">G</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">G1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">G1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">G2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">G2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">G3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">G3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">G4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">G4</button>
                         </div>
                     </div>
                   <!-- H -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">H</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">H</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">H1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">H1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">H2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">H2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">H3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">H3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">H4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">H4</button>
                         </div>
                     </div>
                   <!-- I -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">I</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">I</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">I1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">I1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">I2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">I2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">I3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">I3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">I4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">I4</button>
                         </div>
                     </div>
                   <!-- J -->
-                    <div class="flex gap-8 items-center">
-                        <div class="h-14 w-8 justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">J</h3></div>
+                    <div class="flex gap-x-2 justify-between lg:gap-8 items-center">
+                        <div class="h-14 w-5 lg:w-8  justify-start flex items-center"><h3 class="text-xl font-medium text-[#0000007a]">J</h3></div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">J1</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">J1</button>
                         </div>
                         <div class="mr-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">J2</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">J2</button>
                         </div>
                         <div class="ml-3 justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">J3</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">J3</button>
                         </div>
                         <div class="justify-center flex items-center text-xl font-medium text-[#0000007a]  rounded-xl bg-[#F7F8F8]">
-                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-32 h-14 ">J4</button>
+                          <button class="seat2 rounded-xl bg-[#F7F8F8] w-12 sm:w-20 md:w-24 lg:w-32 h-14 ">J4</button>
                         </div>
                     </div>
 
                 </section>
               </div>
-              <div class="border-r-2 mx-5 border-r-text-[#0000007a] border-dashed"></div>
-              <!-- money section -->
-              <div class="pr-5 flex-1">
-                 <h2 class="text-2xl font-semibold mb-4 pb-3 border-b-2 border-b-text-[#0000007a] border-dashed ">Select your seat</h2>
 
+              <div class="border-r-2 mx-5 hidden lg:block border-r-text-[#0000007a] border-dashed"></div>
+              <!-- money section -->
+              <div class="lg:pr-5 lg:flex-1 mt-10 lg:mt-0 ">
+                 <h2 class="text-2xl font-semibold mb-4 pb-3 border-b-2 border-b-text-[#0000007a] border-dashed ">Select your seat</h2>
                  <!-- seat price and name -->
-                 <div class="w-full">
-                  <div class=" my-6 p-8 rounded-xl inter-font flex bg-[#F7F8F8]">
-                    <div class="w-full">
-                        <div class="flex w-full pb-4 justify-between border-b-2 border-b-text-[#0000007a] border-dashed">
+                 <div class="w-full py-2 lg:py-0">
+                  <div class=" my-6 lg:p-8 rounded-xl inter-font flex bg-[#F7F8F8]">
+                    <div class="w-full px-2">
+                        <div class="flex w-full py-4 justify-between border-b-2 border-b-text-[#0000007a] border-dashed">
                           <h3 class="text-xl">Seat <span id="increase-seat" class="p-1 rounded-md bg-green-500 text-white">0</span></h3>
                           <h3 class="text-xl">Class</h3>
                           <h3 class="text-xl">Price</h3>
@@ -405,9 +406,9 @@
                           <h3 class="">BDT<span id="discount_price" class=" ml-3">0</span></h3>
                         </div>
 
-                        <div id="discount-container" class="text-xl py-2 pl-5 pr-2 bg-white rounded-xl flex justify-between">
+                        <div id="discount-container" class="text-xl py-2 sm:pl-5 pr-2 bg-white rounded-xl flex justify-between">
                           <input id="coupon-input" class="focus:outline-none" type="text" placeholder="Have a Any Coupon?">
-                          <button onclick="applyButtonHandle()" disabled id="apply_button"  class="py-3  px-5 rounded-xl bg-green-500 font-semibold text-white">Apply</button>
+                          <button onclick="applyButtonHandle()" disabled id="apply_button"  class="py-3 ml-[-30px] ms:ml-0 px-5 rounded-xl bg-green-500 font-semibold text-white">Apply</button>
                         </div>
 
                         <div class="flex justify-between inter-font font-medium items-center py-4">
@@ -418,28 +419,30 @@
                     
                   </div>
 
-                  <div class="my-5">
-                        <h2 class="ext-xl mb-1 font-semibold capitalize">passenger name</h2>
-                        <input class="focus:outline-none w-full text-xl p-5 border-2 border-gray-200 bg-white rounded-xl" type="text" placeholder="Enter your Name">
-                  </div>
-                  <div class="my-5">
-                        <h2 class="ext-xl mb-1 font-semibold capitalize">phone number</h2>
-                        <input class="focus:outline-none w-full text-xl p-5 border-2 border-gray-200 bg-white rounded-xl" type="number" placeholder="Enter your Phone Number">
-                  </div>
-                  <div class="my-5">
-                        <h2 class="ext-xl mb-1 font-semibold capitalize">email ID</h2>
-                        <input class="focus:outline-none w-full text-xl p-5 border-2 border-gray-200 bg-white rounded-xl" type="email" placeholder="Enter your Email ID">
-                  </div>
+                    <div class="px-2 lg:px-0">
+                        <div class="my-5">
+                          <h2 class="ext-xl mb-1 font-semibold capitalize">passenger name</h2>
+                          <input class="focus:outline-none w-full text-xl p-5 border-2 border-gray-200 bg-white rounded-xl" type="text" placeholder="Enter your Name">
+                        </div>
+                        <div class="my-5">
+                              <h2 class="ext-xl mb-1 font-semibold capitalize">phone number</h2>
+                              <input required class="focus:outline-none w-full text-xl p-5 border-2 border-gray-200 bg-white rounded-xl" type="number" placeholder="Enter your Phone Number">
+                        </div>
+                        <div class="my-5">
+                              <h2 class="ext-xl mb-1 font-semibold capitalize">email ID</h2>
+                              <input required class="focus:outline-none w-full text-xl p-5 border-2 border-gray-200 bg-white rounded-xl" type="email" placeholder="Enter your Email ID">
+                        </div>
+                        
+                        <div class="w-full text-center flex justify-center"> 
+                          <a target="_self" href="modal.html" onclick="submitButtonHandle()" class="py-3 px-5 w-full rounded-xl bg-green-500 font-semibold text-white">Next</a>
+                        </div>
 
-                  <div class="w-full"> 
-                    <button onclick="submitButtonHandle()" class="py-3 px-5 w-full rounded-xl bg-green-500 font-semibold text-white">Next</button>
-                  </div>
-
-                  <!-- trams and condition -->
-                   <div class="mt-5 flex justify-evenly">
-                    <a class="text-[16px] inter-font text-[#00000066] border-b" href="#">Terms and Conditions</a>
-                    <a class="text-[16px] inter-font text-[#00000066] border-b" href="#">Cancellation Policy</a>
-                   </div>
+                        <!-- trams and condition -->
+                        <div class="py-5 flex gap-x-2 justify-evenly ">
+                          <a class="text-[16px] inter-font text-[#00000066] border-b" href="#">Terms and Conditions</a>
+                          <a class="text-[16px] inter-font text-[#00000066] border-b" href="#">Cancellation Policy</a>
+                        </div>
+                    </div>
                   
 
                  </div>
@@ -454,18 +457,33 @@
            
         </section>
 
-        <!-- modal section -->
-         <div id="modal-section" class="absolute hidden  z-50 bg-white text-center backdrop-blur-sm space-y-5 py-12 px-20 rounded-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-            <img class="m-auto" src="images/success.png" alt="success ">
-            <h3 class="text-2xl font-bold text-green-500 inter-font">Success</h3>
-            <p class="text-xl text-[#4A4A4A] font-medium">Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.</p>
-            <p class="text-xl text-[#4A4A4A] font-light">Shortly you will find a confirmation in your email.</p>
-            <div class=""> 
-                    <button id="#home" onclick="continueButtonHandle()" class="py-3 px-32 rounded-xl bg-green-500 font-semibold text-white">continue</button>
-                  </div>
-         </div>
+        
     </main>
-    <footer></footer>
+    <footer class="py-10 lg:py-32 bg-black">
+          <div class="container m-auto px-2 md:px-0 text-white">
+            <div class="flex justify-between w-full border-b-2 border-b-text-[#d2cbcb4e] pb-4 mb-4 border-dashed">
+              <div class="flex-1 space-y-3">
+                <a href="index.html" class="text-4xl font-bold">B-Ticket</a>
+                <p class="text-sm inter-font font-thin">B-Ticket is a digital platform to make your daily commuting better.</p>
+              </div>
+              <div class="flex-1 space-y-3 text-end grid justify-end">
+                  <a href="index.html" class="text-4xl font-bold">B-Ticket</a>
+                  <a href="https://www.google.com" class="border rounded-md"><img class="filter grayscale scale-50" src="images/playstore.png" alt="playstore"></a>
+              </div>
+          </div>
+            <div class="flex justify-between md:px-2 flex-col-reverse md:flex-row  ">
+              <div class="flex-1 text-center mt-5 md:mt-0 md:text-start ">
+                <p class="text-sm inter-font font-thin">@all rights reserved, P-Ticket services limited.2024.</p>
+              </div>
+              <div class="flex-1 md:flex text-end justify-end space-py-4 md:space-y-0 gap-x-2 lg:gap-8">
+                  <a class="text-sm block text-center md:inline-block inter-font font-normal" href="#">Terms & condition</a>
+                  <a class="text-sm block text-center md:inline-block inter-font font-normal" href="#">Return & refund policy</a>
+                  <a class="text-sm block text-center md:inline-block inter-font font-normal" href="#">Privacy policy</a>
+              </div>
+          </div>
+
+        </div>
+    </footer>
     <script src="screpts/app.js"></script>
   </body>
 </html>
