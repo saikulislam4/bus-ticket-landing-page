@@ -1,3 +1,13 @@
+  // menu bar function
+  function menuBar(){
+    const mobileMenu = document.getElementById("mobile-menu");
+      if(mobileMenu.style.display == "block"){
+        mobileMenu.style.display= "none"
+      }else{
+        mobileMenu.style.display = "block"
+      }
+  
+  }
 // selected all class
 let collectedClicked = [];
     const allSeat = document.querySelectorAll(".seat2");

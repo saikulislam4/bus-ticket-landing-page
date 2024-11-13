@@ -13,31 +13,54 @@
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script src="https://kit.fontawesome.com/b7f823b944.js" crossorigin="anonymous"></script>
+
     <!-- style css -->
     <link rel="stylesheet" href="style/style.css" />
 
   </head>
   <body>
-    <header class="container mb-44 m-auto">
+    <header id="#home" class="container mb-44 m-auto">
       <!-- nav section -->
-      <div class="flex hidden justify-between mt-12 mb-7 items-center">
-        <nav><h2 class="text-4xl font-bold">B-Ticket</h2></nav>
-        <nav class="flex capitalize">
-          <a href="#"></a>
-          <a class="text-xl mr-12 font-medium text-[#030712ab]">home</a>
-          <a class="text-xl mr-12 font-medium text-[#030712ab]">about</a>
-          <a class="text-xl mr-12 font-medium text-[#030712ab]">destination</a>
-          <a class="text-xl mr-12 font-medium text-[#030712ab]">search</a>
-        </nav>
-        <nav>
+      <nav class="flex px-2 xl:px-0 justify-between mt-7 md:mt-12 mb-7 items-center">
+        <div><h2 href="#home" class="text-4xl font-bold cursor-pointer hover:text-green-500 duration-75">B-Ticket</h2></div>
+
+        <div class="flex capitalize hidden md:block">
+          <a href="#" class="text-xl mr-12 font-medium  hover:text-green-500 duration-75 text-[#030712ab]">home</a>
+          <a href="#" class="text-xl mr-12 font-medium  hover:text-green-500 duration-75 text-[#030712ab]">about</a>
+          <a href="#" class="text-xl mr-12 font-medium  hover:text-green-500 duration-75 text-[#030712ab]">destination</a>
+          <!-- <a class="text-xl mr-12 font-medium text-[#030712ab]">search</a> -->
+        </div>
+          
+        <!-- menu bar -->
+          <div class="text-3xl block md:hidden relative">
+            <i onclick="menuBar()" class="fa-solid fa-bars cursor-pointer  hover:text-green-500 duration-75"></i>
+            <!-- mobile view -->
+          <div id="mobile-menu" class="capitalize bg-[#F7F8F8] hidden space-y-3 mt-4 right-0 absolute z-30 p-6 rounded-lg text-center ">
+              <a href="#" class="text-xl hover:text-green-500 duration-75 inline-block font-medium text-[#030712ab]">home</a>
+              <a href="#" class="text-xl hover:text-green-500 duration-75 inline-block font-medium text-[#030712ab]">about</a>
+              <a href="#destination" class="text-xl hover:text-green-500 duration-75 inline-block font-medium text-[#030712ab]">destination</a>
+              <!-- <a href="#" class="text-xl border hover:text-green-500 duration-75 border-black inline-block font-medium text-[#030712ab]">search</a> -->
+              <button
+                id="#home"
+                class="border-2 border-[#1cd10054] px-6 py-3 text-xl rounded-2xl bg-[#1cd10037] text-green-500 flex"
+              >
+                Bus <img class="ml-4" src="images/bus-icon.png" alt="" />
+              </button>
+            </div>
+
+          </div>
+        <div class="hidden md:block">
           <button
             id="#"
             class="border-2 border-[#1cd10054] px-6 py-3 text-xl rounded-2xl bg-[#1cd10037] text-green-500 flex"
           >
             Bus <img class="ml-4" src="images/bus-icon.png" alt="" />
           </button>
-        </nav>
-      </div>
+        </div>
+      </nav>
+
+ 
 
       <!-- banner section -->
       <section class="container">
@@ -92,10 +115,10 @@
     </header>
     <main class="">
       <!-- best offer section -->
-       <section class="container px-2 xl:px-0 m-auto mb-16 lg:mb-32">
+       <section class="container px-2 xl:px-0 m-auto mb-16 xl:mb-32">
         <div class="mb-12 text-center"><h2 class="text-5xl font-bold text-black">best offers for you</h2></div>
 
-        <div class="flex flex-col lg:flex-row gap-6 mb-16">
+        <div class="flex flex-col xl:flex-row gap-6 mb-16">
           <!-- 15% off  -->
           <div class="flex-1 relative flex-col lg:flex-row items-center text-center flex justify-center lg:justify-between bg-yellow-500 rounded-3xl p-12">
             <img class="absolute hidden lg:block left-[50%] lg:scale-[1.2] xl:scale-[1.1] lg:top-5 xl:top-1" src="images/cupon-devider.png" alt="coupon code picture">
@@ -132,7 +155,7 @@
        </section>
 
        <!-- B tick main section -->
-        <section class="rounded-t-[80px] px-2 lg:px-0 bg-[#F7F8F8] pt-20 lg:py-40 border-t-2 border-t-green-500">
+        <section id="#destination" class="rounded-t-[80px] px-2 lg:px-0 bg-[#F7F8F8] pt-20 lg:py-40 border-t-2 border-t-green-500">
           <!-- b paribahan title -->
           <div class="container m-auto">
                  <div class="text-center mb-6 lg:mb-10">
@@ -140,12 +163,13 @@
                     <p class=" lg:w-9/12 m-auto text-xl inter-font text-[#00000066]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
                  </div>
 
-               <section class="bg-white hidden rounded-2xl">
+               <section class="bg-white rounded-2xl p-2 lg:p-0">
                  <!-- routing section -->
-                  <div class="rounded-3xl relative p-8 items-center grid grid-cols-4">
-                    <img class="absolute scale-[1.2] right-[19%] top-5" src="images/info-devider.png" alt="info">
-                    <div class="  col-span-3">
-                     <div class="flex justify-between items-center">
+                  <div class="rounded-3xl relative lg:p-8 items-center lg:grid xl:grid-cols-4">
+                    <img class="absolute hidden xl:block scale-[1.2] right-[19%] top-5" src="images/info-devider.png" alt="info">
+                    <div class="lg:col-span-3">
+
+                     <div class="flex justify-between flex-col lg:flex-row items-center">
                        <div class="flex items-center gap-2">
                         <img src="images/bus-logo.png" alt="bus logo">
                         <div>
@@ -155,13 +179,13 @@
 
                       </div>
                       <!-- seat -->
-                       <div class="bg-[#1cd1003e] rounded-2xl text-green-500 px-4 gap-1 flex items-center py-3">
+                       <div class="bg-[#1cd1003e] rounded-2xl mt-4 lg:mt-0 text-green-500 px-4 gap-1 flex items-center py-3">
                           <img src="images/seat-green-filled.png"  alt="seat">
                           <button class="text-xl font-medium "> <span id="seat_left">40</span> seats left</button>
                        </div>
                      </div>
                        <!-- routing input field -->
-                           <div class="rounded-2xl p-8 mt-6 bg-[#F7F8F8]"> 
+                           <div class="rounded-2xl p-2 space-y-4 lg:space-y-0 lg:p-8 mt-6 bg-[#F7F8F8]"> 
                               <div class="flex  py-6 justify-between items-center border-b border-dashed border-b-gray-400">
                                 <h2 class="text-xl font-semibold text-[#00000066]">Route</h2>
                                 <h2 class="text-xl font-semibold text-[#030712]">Dhaka - Sylhet</h2>
@@ -170,16 +194,16 @@
                                 <h2 class="text-xl font-semibold text-[#00000066]">Departure time</h2>
                                 <h2 class="text-xl font-semibold text-[#030712]">8:oo PM</h2>
                               </div>
-                              <div class="flex  py-6 justify-between items-center">
-                                <h5 class="text-xl font-medium py-3 px-4 rounded-2xl bg-[#0000001b] text-[#0000008a] "> Boarding Point - Laxmipur</h5>
-                                <h5 class="text-xl font-medium  py-3 px-4 rounded-2xl bg-[#0000001b] text-[#0000008a]"> Dropping Point - Bogura</h5>
-                                <h5 class="text-xl font-medium  py-3 px-4 rounded-2xl bg-[#0000001b] text-[#0000008a]"> Est. Time - 11 Hour</h5>
+                              <div class="lg:flex lg:py-6 justify-between items-center">
+                                <h5 class="text-xl mt-4 lg:mt-0 font-medium py-3 px-2 lg:px-4 rounded-2xl bg-[#0000001b] text-[#0000008a] "> Boarding Point - Laxmipur</h5>
+                                <h5 class="text-xl mt-4 lg:mt-0 font-medium  py-3 px-2 lg:px-4 rounded-2xl bg-[#0000001b] text-[#0000008a]"> Dropping Point - Bogura</h5>
+                                <h5 class="text-xl mt-4 lg:mt-0 font-medium  py-3 px-2 lg:px-4 rounded-2xl bg-[#0000001b] text-[#0000008a]"> Est. Time - 11 Hour</h5>
                               </div>
                            </div>
                     </div>
                     
 
-                    <div class="flex-auto text-center col-span-1">
+                    <div class="flex-auto hidden xl:block text-center lg:col-span-1">
                       <div class="flex justify-center">
                         <img src="images/fare.png" alt="fare">
                       </div>
@@ -191,10 +215,10 @@
           </div>
 
           <!-- seat selection section -->
-           <section class="flex mt-16">
+           <section class="flex mt-6 lg:mt-16">
             <div class=" container m-auto lg:p-8  bg-white rounded-2xl">
             <!-- select your seat -->
-             <div class="flex flex-col mt-10 lg:mt-0 lg:flex-row">
+             <div class="flex flex-col mt-10 lg:mt-0 xl:flex-row">
               <div class="flex-1 ">
                 <h2 class="text-2xl font-semibold mb-4 border-b-2 border-b-text-[#0000007a] border-dashed pb-3  ">Select your seat</h2>
                   <div class="flex border-b-2 border-b-text-[#0000007a] border-dashed justify-between items-center pb-3 ">
@@ -377,7 +401,7 @@
                 </section>
               </div>
 
-              <div class="border-r-2 mx-5 hidden lg:block border-r-text-[#0000007a] border-dashed"></div>
+              <div class="border-r-2 mx-5 hidden xl:block border-r-text-[#0000007a] border-dashed"></div>
               <!-- money section -->
               <div class="lg:pr-5 lg:flex-1 mt-10 lg:mt-0 ">
                  <h2 class="text-2xl font-semibold mb-4 pb-3 border-b-2 border-b-text-[#0000007a] border-dashed ">Select your seat</h2>
@@ -460,7 +484,7 @@
         
     </main>
     <footer class="py-10 lg:py-32 bg-black">
-          <div class="container m-auto px-2 md:px-0 text-white">
+          <div class="container m-auto px-2 xl:px-0 text-white">
             <div class="flex justify-between w-full border-b-2 border-b-text-[#d2cbcb4e] pb-4 mb-4 border-dashed">
               <div class="flex-1 space-y-3">
                 <a href="index.html" class="text-4xl font-bold">B-Ticket</a>
